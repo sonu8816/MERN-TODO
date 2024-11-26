@@ -32,7 +32,7 @@ function Login() {
 
         }
         try {
-            const url = 'http://localhost:3000/login';
+            const url = 'https://mern-todo-three-blond.vercel.app/login';
             const response = await fetch(url,{
                 method: 'POST',
                 headers:{

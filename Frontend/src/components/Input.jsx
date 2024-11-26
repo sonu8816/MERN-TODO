@@ -29,7 +29,7 @@ function Input({ todoList, setTodoList }) {
     };
     console.log(obj);
     axios
-      .put("http://localhost:3000/addTodo", {
+      .put("https://mern-todo-three-blond.vercel.app/addTodo", {
         token: localStorage.getItem("token"),
         todo: obj,
       })

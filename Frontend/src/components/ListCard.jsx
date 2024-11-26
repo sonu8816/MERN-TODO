@@ -13,7 +13,7 @@ function ListCard({ todoList, task, setTodoList }) {
     // console.log(index);
     const token = localStorage.getItem("token");
     axios
-      .delete("http://localhost:3000/deleteTask", {
+      .delete("https://mern-todo-three-blond.vercel.app/deleteTask", {
         data: { token: token, id: id },
       })
       .then((response) => {
@@ -38,7 +38,7 @@ function ListCard({ todoList, task, setTodoList }) {
     //   console.log(todoList);
     //   todoList[index] = newTask;
     //   console.log(todoList)
-    axios.post("http://localhost:3000/updateTask", {
+    axios.post("https://mern-todo-three-blond.vercel.app/updateTask", {
         token: localStorage.getItem("token"),
         id: id,
         todo: todoTask,
@@ -64,7 +64,7 @@ function ListCard({ todoList, task, setTodoList }) {
   function check(id) {
     console.log(status);
     axios
-      .post("http://localhost:3000/updateStatus", {
+      .post("https://mern-todo-three-blond.vercel.app/updateStatus", {
         token: localStorage.getItem("token"),
         id: id,
       })

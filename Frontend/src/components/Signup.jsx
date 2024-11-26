@@ -33,7 +33,7 @@ function Signup() {
 
         }
         try {
-            const url = 'http://localhost:3000/signup';
+            const url = 'https://mern-todo-three-blond.vercel.app/signup';
             const response = await fetch(url,{
                 method: 'POST',
                 headers:{

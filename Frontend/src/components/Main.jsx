@@ -15,7 +15,7 @@ function Main({todoList , setTodoList}) {
         // const token = JSON.parse(localStorage.getItem('token'));
         //console.log('Data',todos);
         const token = localStorage.getItem('token');
-          axios.post('http://localhost:3000/getTodos', {
+          axios.post('https://mern-todo-three-blond.vercel.app/getTodos', {
             token:token
         })
         .then(response => {
