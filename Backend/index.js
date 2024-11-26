@@ -14,8 +14,9 @@ import todosRoute from './routers/todos.route.js'
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(cors({
-    // origin: 'http://localhost:5173',  // Replace with the domain where the request is coming from
-    // credentials: true              // Allow cookies and credentials to be sent
+    origin: 'https://mern-todo-cwbc.vercel.app', // Specify the allowed origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
+    credentials: true                           // Allow credentials if needed
 }));
 
 
